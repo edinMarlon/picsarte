@@ -1,0 +1,153 @@
+/* Colores personalizados */
+.bg-primary { background-color: #1e40af; } /* azul oscuro */
+.btn-primary {
+  background-color: #1e40af;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Estilos de los productos */
+.product-card {
+  background-color: #2d3748; /* fondo oscuro para el producto */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Estilo para el ícono flotante del carrito */
+#cart-icon {
+  position: fixed;
+  top: 9%;
+  right: 5%;
+  background-color: #1e40af;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff5f00;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+/* Botón flotante de WhatsApp a la izquierda */
+#whatsapp-chat {
+    position: fixed;
+    bottom: 20px; /* Espacio desde el fondo */
+    left: 20px; /* Espacio desde la izquierda */
+    background-color: #25d366; /* Color de WhatsApp */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto de pulsación en el botón flotante */
+#whatsapp-chat.animate-pulse {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Modal de WhatsApp */
+#whatsapp-chat-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el modal */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whatsapp-chat-modal .btn-primary {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#whatsapp-chat-modal .btn-primary:hover {
+    background-color: #128c7e;
+}
+/* Asegúrate de que el modal esté oculto al cargar la página */
+#whatsapp-chat-modal.hidden {
+    display: none;  /* Ocultar el modal */
+}
+/* Estilos del Carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para las flechas del carrusel */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}

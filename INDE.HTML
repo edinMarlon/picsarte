@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tus Zapatillas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .zapatilla-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .zapatilla-image {
+            width: 400px;
+            height: auto;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        .control-group {
+            margin-bottom: 10px;
+        }
+
+        .control-label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .color-picker {
+            width: 50px;
+            height: 30px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Personaliza tus Zapatillas!</h1>
+    
+    <div class="zapatilla-container">
+        <img id="zapatilla" class="zapatilla-image" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/308804/01/sv01/fnd/PNA/fmt/png/Tenis-BMW-M-Motorsport-Inverse" alt="Zapatilla">
+    </div>
+
+    <div class="controls">
+        <div class="control-group">
+            <label class="control-label" for="parte-superior">elije el color de tu zapatilla</label>
+            <input type="color" id="parte-superior" class="color-picker" value="#f15688">
+
+    </div>
+
+    <script>
+        const parteSuperior = document.getElementById('parte-superior');
+
+        parteSuperior.addEventListener('input', function() {
+            // Cambiar el color de la parte superior de la zapatilla
+            zapatilla.style.filter = `hue-rotate(${parseInt(parteSuperior.value.slice(1), 16)}deg)`;
+        });
+    </script>
+</body>
+</html>

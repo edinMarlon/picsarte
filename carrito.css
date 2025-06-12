@@ -1,0 +1,206 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1a202c; /* Fondo oscuro */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4c51bf, #3b82f6);
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #fbbf24; /* Amarillo en hover */
+}
+
+/* Sección principal */
+section {
+    padding: 30px;
+    margin-top: 30px;
+}
+
+section h3 {
+    font-size: 2.5rem;
+    color: #fbbf24; /* Amarillo para el título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de productos */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilo de cada producto */
+.bg-gray-700 {
+    background-color: #2d3748;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilo de la imagen del producto */
+.bg-gray-700 img {
+    position: relative;
+    max-width: 300px;  /* Aumentamos el tamaño de la imagen */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;  /* Centra la imagen */
+    display: block;   /* Asegura que la imagen sea un bloque y se pueda centrar */
+    transition: transform 0.3s ease-in-out; /* Para agregar un efecto suave de transición si deseas */
+}
+
+/* Contenedor de la descripción */
+.flex-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botones de Talla */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    margin: 5px;
+    transition: transform 0.2s, background-color 0.3s ease;
+}
+
+/* Botones de talla */
+button.py-1 {
+    background-color: #4c51bf; /* Azul */
+    color: white;
+}
+
+button.bg-yellow-400 {
+    background-color: #fbbf24; /* Amarillo */
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+/* Estilo de los botones de color */
+/* Estilo de los botones de color */
+button.w-6 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Hacer los botones círculos */
+    border: 2px solid #fff; /* Borde blanco por defecto */
+    cursor: pointer;
+    transition: transform 0.2s, border 0.3s;
+}
+
+/* Efecto hover en los botones de color */
+button.w-6:hover {
+    transform: scale(1.1);
+    border-color: #fbbf24; /* Resalta el borde cuando el mouse pasa sobre el botón */
+}
+
+/* Cuando el botón es seleccionado */
+button.w-6.selected {
+    border-color: #fbbf24; /* Borde amarillo cuando el botón está seleccionado */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+/* Botón Eliminar */
+button.bg-red-600 {
+    background-color: #e53e3e; /* Rojo para eliminar */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+/* Estilo de la sección de "Finalizar Compra" */
+.btn-primary {
+    background-color: #4c51bf; /* Azul */
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #3b82f6; /* Azul claro en hover */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #4c51bf, #3b82f6);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .fab {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .fab:hover {
+    color: #fbbf24;
+}
+.color-selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#color-picker {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 50%;
+}
+
+#color-picker:hover {
+    transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}

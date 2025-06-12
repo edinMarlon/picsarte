@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZapasUrban - Zapatillas de Marca</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white shadow-lg p-5 flex justify-between items-center">
+        <h1 class="text-4xl font-extrabold">Pisarte</h1>
+        <nav>
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="#adidas" class="hover:text-yellow-400 transition-colors">Adidas</a></li>
+                <li><a href="#nike" class="hover:text-yellow-400 transition-colors">Nike</a></li>
+                <li><a href="#puma" class="hover:text-yellow-400 transition-colors">Puma</a></li>
+                <li><a href="#reebok" class="hover:text-yellow-400 transition-colors">Reebok</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="relative bg-cover bg-center h-80 flex items-center justify-center text-center text-white" style="background-image: url('https://images.unsplash.com/photo-1600185361316-3c6e6bb9882a');">
+        <div class="bg-opacity-50 bg-black p-8 rounded-lg shadow-xl">
+            <h2 class="text-4xl mb-3 font-bold">Zapatillas de Marca al Mejor Precio</h2>
+            <p class="text-xl">¡Haz tu compra en línea y recibe en la comodidad de tu hogar!</p>
+        </div>
+    </section>
+
+    <!-- Sección de productos (Nike, Adidas, Puma, Reebok) -->
+
+    <!-- Sección del Producto -->
+<section id="adidas" class="py-10 px-6 max-w-7xl mx-auto bg-gray-100 rounded-lg my-12">
+    <h3 class="text-3xl font-semibold mb-6 text-primary">Adidas</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Producto 1: Adidas Ultraboost 22 -->
+        <div class="product-card">
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel relative" id="carousel-0">
+                <div class="carousel-images">
+                    <img src="img/adidas/adidas1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/adidas/adidas1.1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/adidas/adidas1.2.png" alt="Adidas Ultraboost 22" class="w-full" />
+                </div>
+                <!-- Flechas para navegar -->
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+
+            <h4 class="text-xl text-center text-white mt-4">Anthony Edwards 1 Low Shoes</h4>
+            <p class="text-center text-yellow-400 mb-4">$110.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas Ultraboost 22', 180,'img/adidas/adidas1.png')">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2: Adidas UltraBoost 21 -->
+        <div class="product-card">
+            <div class="carousel relative" id="carousel-1">
+                <div class="carousel-images">
+                    <img src="img/adidas/adidas2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/adidas/adidas2.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/adidas/adidas2.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">Samba OG Shoes</h4>
+            <p class="text-center text-yellow-400 mb-4">$100.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190,'img/adidas/adidas2.png')">Agregar al carrito</button>
+        </div>
+        <!--producto adidas3 -->
+         <div class="product-card">
+            <div class="carousel relative" id="carousel-2">
+                <div class="carousel-images">
+                    <img src="img/adidas/adidas3.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/adidas/adidas3.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/adidas/adidas3.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">F50 Messi Pro Firm Ground Cleats</h4>
+            <p class="text-center text-yellow-400 mb-4">$160.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190,'img/adidas/adidas3.png')">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sección nike -->
+<section id="nike" class="py-10 px-6 max-w-7xl mx-auto bg-gray-100 rounded-lg my-12">
+    <h3 class="text-3xl font-semibold mb-6 text-primary">Nike</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Producto 1: Adidas Ultraboost 22 -->
+        <div class="product-card">
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel relative" id="carousel-3">
+                <div class="carousel-images">
+                    <img src="img/nike/nike1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/nike/nike1.1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/nike/nike1.2.png" alt="Adidas Ultraboost 22" class="w-full" />
+                </div>
+                <!-- Flechas para navegar -->
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+
+            <h4 class="text-xl text-center text-white mt-4">Nike Dunk Low Unlocked By You</h4>
+            <p class="text-center text-yellow-400 mb-4">$165.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas Ultraboost 22', 180,'img/nike/nike1.png')">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2: Adidas UltraBoost 21 -->
+        <div class="product-card">
+            <div class="carousel relative" id="carousel-4">
+                <div class="carousel-images">
+                    <img src="img/nike/nike2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/nike/nike2.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/nike/nike2.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">Air Jordan 1 Retro High OG "UNC Reimagined"</h4>
+            <p class="text-center text-yellow-400 mb-4">$185.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190,'img/nike/nike2.png')">Agregar al carrito</button>
+        </div>
+        <!--producto adidas3 -->
+         <div class="product-card">
+            <div class="carousel relative" id="carousel-5">
+                <div class="carousel-images">
+                    <img src="img/nike/adidas3.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/nike/adidas3.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/nike/adidas3.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">Nike Flex Runner 3</h4>
+            <p class="text-center text-yellow-400 mb-4">$44.90</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190,'img/nike/adidas3.png')">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+    <!-- Sección Puma -->
+<section id="puma" class="py-10 px-6 max-w-7xl mx-auto bg-gray-100 rounded-lg my-12">
+    <h3 class="text-3xl font-semibold mb-6 text-primary">Puma</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Producto 1: Adidas Ultraboost 22 -->
+        <div class="product-card">
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel relative" id="carousel-6">
+                <div class="carousel-images">
+                    <img src="img/puma/puma1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/puma/puma1.1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/puma/puma1.2.png" alt="Adidas Ultraboost 22" class="w-full" />
+                </div>
+                <!-- Flechas para navegar -->
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+
+            <h4 class="text-xl text-center text-white mt-4">Tenis Easy Rider Vintage</h4>
+            <p class="text-center text-yellow-400 mb-4">$90.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas Ultraboost 22', 180,'img/puma/puma1.png')">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2: Adidas UltraBoost 21 -->
+        <div class="product-card">
+            <div class="carousel relative" id="carousel-7">
+                <div class="carousel-images">
+                    <img src="img/puma/puma2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/puma/pumam2.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/puma/puma2.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">PUMA x KIDSUPER KING ULTIMATE</h4>
+            <p class="text-center text-yellow-400 mb-4">$154.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190)">Agregar al carrito</button>
+        </div>
+        <!--producto adidas3 -->
+         <div class="product-card">
+            <div class="carousel relative" id="carousel-8">
+                <div class="carousel-images">
+                    <img src="img/puma/puma3.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/puma/pumma3.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/puma/puma3.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">Inverse BMW M Motorsport</h4>
+            <p class="text-center text-yellow-400 mb-4">$100.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Reebok -->
+<section id="reebok" class="py-10 px-6 max-w-7xl mx-auto bg-gray-100 rounded-lg my-12">
+    <h3 class="text-3xl font-semibold mb-6 text-primary">Rebook</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Producto 1: Adidas Ultraboost 22 -->
+        <div class="product-card">
+            <!-- Carrusel de Imágenes -->
+            <div class="carousel relative" id="carousel-9">
+                <div class="carousel-images">
+                    <img src="img/rebook/rebook1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/rebook/rebook1.1.png" alt="Adidas Ultraboost 22" class="w-full" />
+                    <img src="img/rebook/rebook1.2.png" alt="Adidas Ultraboost 22" class="w-full" />
+                </div>
+                <!-- Flechas para navegar -->
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+
+            <h4 class="text-xl text-center text-white mt-4">Adidas Ultraboost 22</h4>
+            <p class="text-center text-yellow-400 mb-4">$180.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas Ultraboost 22', 180,'img/rebook/rebook1.png')">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2: Adidas UltraBoost 21 -->
+        <div class="product-card">
+            <div class="carousel relative" id="carousel-10">
+                <div class="carousel-images">
+                    <img src="img/rebook/rebook2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/rebook/rebook2.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/rebook/rebook2.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">Adidas UltraBoost 21</h4>
+            <p class="text-center text-yellow-400 mb-4">$190.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190,'img/rebook/rebook2.png')">Agregar al carrito</button>
+        </div>
+        <!--producto adidas3 -->
+         <div class="product-card">
+            <div class="carousel relative" id="carousel-11">
+                <div class="carousel-images">
+                    <img src="img/rebook/rebook3.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/rebook/rebook3.1.png" alt="Adidas UltraBoost 21" class="w-full" />
+                    <img src="img/rebook/rebook3.2.png" alt="Adidas UltraBoost 21" class="w-full" />
+                </div>
+                <button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10094;
+                </button>
+                <button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-white bg-gray-700 p-2 rounded-full">
+                    &#10095;
+                </button>
+            </div>
+            <h4 class="text-xl text-center text-white mt-4">Adidas UltraBoost 21</h4>
+            <p class="text-center text-yellow-400 mb-4">$190.00</p>
+            <button class="btn-primary w-full py-2 rounded-lg text-lg" onclick="addToCart('Adidas UltraBoost 21', 190,'img/rebook/rebook3.png')">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Carrito de Compras -->
+    <div id="cart-icon" class="fixed top-5 right-5 bg-blue-500 text-white p-5 rounded-full cursor-pointer shadow-lg">
+        <a href="carrito.html"
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cart-count" class="ml-2">0</span>
+        </a>
+    </div>
+<!-- Botón Flotante de WhatsApp (movido a la izquierda) -->
+<div id="whatsapp-chat" class="fixed bottom-5 left-5 bg-green-500 text-white p-5 rounded-full cursor-pointer shadow-lg animate-pulse" onclick="openWhatsAppChat()"> 
+    <img src="iconos/iconow.png" alt="whatsApp" class="w-10 h-10"/>
+</div>
+<!-- Modal de WhatsApp -->
+<div id="whatsapp-chat-modal" class="fixed inset-0 bg-gray-900 bg-opacity-60 flex justify-center items-center z-50 hidden">
+    <div class="bg-white p-8 rounded-lg max-w-sm w-full text-center">
+        <h2 class="text-xl font-bold text-black">Hola, ¿En qué podemos ayudarte?</h2>
+        <p class="my-4 text-gray-600">Haz clic abajo para Hablar con un asesor.</p>
+        <a href="https://wa.link/yll5hn" target="_blank">
+            <button class="btn-primary w-full py-2 rounded-lg">Abrir chat</button>
+        </a>
+        <button class="mt-4 text-red-500" onclick="closeWhatsAppChat()">Cerrar</button>
+    </div>
+</div>
+<!-- Footer y Redes Sociales -->
+<footer class="bg-gradient-to-r from-indigo-600 to-blue-500 py-6 text-center text-white">
+    <p class="text-lg font-semibold">&copy; 2025 Pisarte. Todos los derechos reservados.</p>
+    <div class="flex justify-center space-x-6 text-3xl mt-4">
+        <!-- Instagram -->
+        <a href="https://instagram.com" class="hover:text-yellow-400 transition-colors transform hover:scale-125">
+            <img src="iconos/instagram.png" alt="Instagram" class="w-8 h-8"/>
+        </a>
+        <!-- Facebook -->
+        <a href="https://facebook.com" class="hover:text-yellow-400 transition-colors transform hover:scale-125">
+            <img src="iconos/facebook.png" alt="Facebook" class="w-8 h-8"/>
+        </a>
+        <!-- TikTok -->
+        <a href="https://tiktok.com" class="hover:text-yellow-400 transition-colors transform hover:scale-125">
+            <img src="iconos/tik tok.png" alt="TikTok" class="w-8 h-8"/>
+        </a>
+    </div>
+</footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

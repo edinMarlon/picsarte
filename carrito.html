@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resumen del Carrito - ZapasUrban</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Picsarte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h3>Resumen de tu Compra</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Resumen de productos -->
+            <div class="bg-gray-800">
+                <h4>Productos Seleccionados</h4>
+                <ul id="cart-items">
+                    <!-- Los productos se agregarán dinámicamente con talla y color -->
+                </ul>
+                <div class="text-right">
+                    <button class="btn-primary" onclick="continueToCheckout(event)">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ZapasUrban. Todos los derechos reservados.</p>
+        <div class="flex">
+            <a href="https://instagram.com" class="fab fa-instagram"></a>
+            <a href="https://facebook.com" class="fab fa-facebook"></a>
+            <a href="https://tiktok.com" class="fab fa-tiktok"></a>
+            <a href="https://wa.me/1234567890" class="fab fa-whatsapp"></a>
+        </div>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+
+</html>
+
